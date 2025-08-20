@@ -1,0 +1,47 @@
+.section {
+	margin-bottom: 240px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 70px;
+	}
+}
+
+.heading {
+	margin-bottom: 60px;
+}
+
+.title {
+	max-width: 902px;
+	margin-bottom: 52px;
+
+	@media (max-width: $breakpoint-xl) {
+		max-width: 700px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 500px;
+	}
+}
+
+.text {
+	max-width: 888px;
+}
+
+.image_decor {
+	position: absolute;
+	top: -400px;
+	z-index: -1;
+	right: -100px;
+
+	@media (max-width: $breakpoint-lg) {
+		max-width: 400px;
+		right: -100px;
+		top: -200px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 200px;
+		right: 0px;
+		top: -150px;
+	}
+}

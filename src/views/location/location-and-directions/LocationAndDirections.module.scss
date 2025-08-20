@@ -1,0 +1,116 @@
+.section {
+	padding-top: 250px;
+	margin-bottom: 224px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 66px;
+	}
+}
+
+.heading {
+	position: relative;
+	margin-bottom: 60px;
+
+	@media (max-width: $breakpoint-xl) {
+		margin-bottom: 200px;
+	}
+}
+
+.title {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 32px;
+}
+
+.text {
+	max-width: 530px;
+	margin: 0 auto;
+}
+
+.cards {
+	position: relative;
+	margin-top: 40px;
+	max-width: 659px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: $breakpoint-lg) {
+		max-width: 100%;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		margin-top: 60px;
+	}
+}
+
+.cards_top {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+	margin-bottom: 12px;
+
+	@media (max-width: $breakpoint-sm) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.badge {
+	min-width: 58px;
+	margin-bottom: 10px;
+
+	@media (max-width: $breakpoint-sm) {
+		min-width: 87px;
+	}
+}
+
+.bg_card {
+	min-height: 120px;
+
+	@media (max-width: $breakpoint-lg) {
+		width: 100%;
+	}
+
+	@media (max-width: $breakpoint-sm) {
+		min-height: 106px;
+	}
+}
+
+.bg_card_title {
+	max-width: 453px;
+}
+
+.image_decor_heading {
+	position: absolute;
+	right: 0;
+	top: -120px;
+
+	@media (max-width: $breakpoint-xl) {
+		top: -200px;
+		max-width: 250px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		top: -200px;
+		max-width: 200px;
+	}
+}
+
+.image_decor_cards {
+	position: absolute;
+	right: 0;
+	bottom: -120px;
+	left: -250px;
+
+	@media (max-width: $breakpoint-xl) {
+		left: 0;
+		bottom: unset;
+		top: -250px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 200px;
+		top: -200px;
+		left: -50px;
+	}
+}

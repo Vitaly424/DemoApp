@@ -1,0 +1,33 @@
+.bg_card {
+	position: relative;
+	box-shadow: 0 0 11px -2px rgba(0, 0, 0, 0.2);
+	border-radius: 40px;
+
+	@media (max-width: $breakpoint-md) {
+		border-radius: 24px;
+	}
+}
+
+.sm {
+	padding: 12px 20px;
+}
+
+.md {
+	padding: 30px 30px 24px 30px;
+
+	@media (max-width: $breakpoint-md) {
+		padding: 20px 20px 24px 20px;
+	}
+}
+
+.white {
+	background-color: #fbfbfb;
+}
+
+.blue {
+	background-color: var(--color-accent);
+}
+
+.dark {
+	background-color: #121315;
+}

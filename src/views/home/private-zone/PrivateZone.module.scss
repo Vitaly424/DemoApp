@@ -1,0 +1,70 @@
+.section {
+	margin-bottom: 181px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 90px;
+	}
+}
+
+.bg_card {
+	padding: 40px 35px;
+
+	@media (max-width: $breakpoint-xs) {
+		padding: 20px 20px 24px 20px;
+	}
+}
+
+.heading {
+	margin-bottom: 34px;
+}
+
+.top {
+	margin-bottom: 18px;
+	display: flex;
+
+	.title {
+		max-width: 270px;
+		color: #fff;
+	}
+
+	@media (max-width: $breakpoint-sm) {
+		margin-bottom: 29px;
+		flex-direction: column;
+	}
+}
+
+.text {
+	max-width: 590px;
+
+	p {
+		color: #a5a5a7;
+	}
+}
+
+.badge {
+	position: relative;
+	top: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 116px;
+	height: 41px;
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+	color: #121315;
+	box-shadow: 0 0 13px -1px rgba(255, 200, 81, 0.5);
+	background: #ffc851;
+	border-radius: 16px;
+
+	@media (max-width: $breakpoint-sm) {
+		font-size: 20px;
+		height: 31px;
+	}
+}
+
+.link_button {
+	@media (max-width: $breakpoint-sm) {
+		margin: 0 auto;
+	}
+}

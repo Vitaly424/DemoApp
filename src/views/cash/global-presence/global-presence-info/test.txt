@@ -1,0 +1,107 @@
+'use client'
+
+import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+
+import { PlanetWrapper } from '../planet-wrapper/PlanetWrapper'
+
+import { countriesData } from './countries.data'
+import type { CountriesItem } from './countries.types'
+
+import styles from './GlobalPresenceInfo.module.scss'
+
+export function GlobalPresenceInfo() {
+	const [visibleCountries, setVisibleCountries] = useState<CountriesItem[]>([])
+	const [isVisible, setIsVisible] = useState(true)
+
+	const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+	const frameRef = useRef<number | null>(null)
+
+	const runCycle = () => {
+		setIsVisible(false)
+
+		timeoutRef.current = setTimeout(() => {
+			setVisibleCountries(getRandomCountries(8))
+			setIsVisible(true)
+
+			frameRef.current = requestAnimationFrame(() => {
+				timeoutRef.current = setTimeout(runCycle, 2500)
+			})
+		}, 600)
+	}
+
+	useEffect(() => {
+		setVisibleCountries(getRandomCountries(8))
+		runCycle()
+
+		const handleVisibilityChange = () => {
+			console.log('ВЕРНУЛСЯ ОБРАТНО')
+
+			if (document.visibilityState === 'visible') {
+				if (timeoutRef.current) clearTimeout(timeoutRef.current)
+				if (frameRef.current) cancelAnimationFrame(frameRef.current)
+
+				runCycle()
+			}
+		}
+
+		document.addEventListener('visibilitychange', handleVisibilityChange)
+
+		return () => {
+			if (timeoutRef.current) clearTimeout(timeoutRef.current)
+			if (frameRef.current) cancelAnimationFrame(frameRef.current)
+			document.removeEventListener('visibilitychange', handleVisibilityChange)
+		}
+	}, [])
+
+	useEffect(() => {
+		if (!visibleCountries.length) {
+			setVisibleCountries(getRandomCountries(8))
+		}
+	}, [])
+
+	function getRandomCountries(count: number) {
+		const shuffled = [...countriesData].sort(() => 0.5 - Math.random())
+		return shuffled.slice(0, count)
+	}
+
+	return (
+		<div className={styles.info}>
+			<PlanetWrapper />
+
+			<div className={styles.shadow_image}>
+				<Image
+					src='/images/shadow.png'
+					alt=''
+					width={1053}
+					height={768}
+				/>
+			</div>
+
+			<div className={styles.countries}>
+				<AnimatePresence>
+					{isVisible &&
+						visibleCountries.map((country, index) => (
+							<motion.div
+								key={country.name}
+								initial={{ opacity: 0, y: 20 }}
+								animate={{ opacity: 1, y: 0 }}
+								exit={{ opacity: 0, y: -20 }}
+								transition={{ duration: 0.4, delay: index * 0.02 }}
+								className={styles.country_card}
+							>
+								<div className={styles.country_image}>
+									<img
+										src={country.flag}
+										alt={country.name}
+									/>
+								</div>
+								{country.name}
+							</motion.div>
+						))}
+				</AnimatePresence>
+			</div>
+		</div>
+	)
+}

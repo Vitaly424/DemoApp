@@ -1,0 +1,46 @@
+.section {
+	margin-bottom: 233px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 80px;
+	}
+}
+
+.heading {
+	margin-bottom: 35px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.title {
+		margin-bottom: 24px;
+	}
+}
+
+.content {
+	max-width: 971px;
+	margin: 0 auto;
+}
+
+.card {
+	margin-bottom: 21px;
+}
+
+.image_decor {
+	position: absolute;
+	top: 250px;
+	left: -150px;
+
+	@media (max-width: $breakpoint-xl) {
+		top: unset;
+		bottom: -250px;
+		left: 0;
+		z-index: -1;
+	}
+
+	@media (max-width: $breakpoint-lg) {
+		max-width: 200px;
+		bottom: -150px;
+		left: -50px;
+	}
+}

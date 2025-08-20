@@ -1,0 +1,16 @@
+	<Marquee
+				speed={200}
+				className={styles.ticker}
+				play={true}
+				pauseOnHover={false}
+			>
+				{paymentOptionsListData.map((item, idx) => (
+					<PaymentOptionsCard
+						key={idx}
+						className={cn(styles.ticker_card, styles[item.class])}
+						title={item.title}
+						image={item.image}
+					/>
+				))}
+			</Marquee>
+ 

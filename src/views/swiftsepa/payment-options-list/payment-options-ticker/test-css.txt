@@ -1,0 +1,87 @@
+.ticker {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.ticker_card {
+		img {
+			position: absolute;
+		}
+	}
+ 
+	.ticker_card {
+		margin-right: 20px;
+		width: 280px;
+
+		img {
+			position: absolute;
+		}
+	}
+
+	.products {
+		img {
+			right: 10px;
+		}
+	}
+
+	.services {
+		img {
+			right: 10px;
+		}
+	}
+
+	.marketing {
+		img {
+			bottom: 10px;
+			right: 10px;
+		}
+	}
+
+	.decorating {
+		img {
+			bottom: 20px;
+			right: 20px;
+		}
+	}
+
+	.it {
+		img {
+			bottom: 10px;
+			right: 14px;
+		}
+	}
+
+	.cosmetic {
+		img {
+			right: 10px;
+		}
+	}
+
+	.study {
+		img {
+			top: 15px;
+			right: 0;
+		}
+	}
+
+	.realty {
+		width: 461px;
+
+		img {
+			right: 20px;
+			bottom: 20px;
+		}
+	}
+
+	.agricultural_products {
+		width: 640px;
+
+		@media (max-width: $breakpoint-md) {
+			width: 570px;
+		}
+
+		img {
+			right: 10px;
+			top: 10px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.heading {
+	position: relative;
+	margin-bottom: 60px;
+
+	padding-right: 400px;
+
+	@media (max-width: $breakpoint-lg) {
+		padding-right: 300px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		display: flex;
+		flex-direction: column-reverse;
+		padding-right: 0;
+	}
+}
+
+.title {
+	margin-bottom: 32px;
+	max-width: 505px;
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+.text {
+	max-width: 813px;
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+.image {
+	position: absolute;
+	right: 0;
+	top: -60px;
+
+	@media (max-width: $breakpoint-lg) {
+		max-width: 300px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+
+		max-width: 279px;
+	}
+}

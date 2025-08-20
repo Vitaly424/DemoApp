@@ -1,0 +1,44 @@
+.card {
+	position: relative;
+	border-radius: 40px;
+	padding: 60px 36px 46px 36px;
+
+	@media (max-width: $breakpoint-lg) {
+		padding-right: 30px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		padding: 40px 24px 40px 24px;
+	}
+}
+
+.badge {
+	margin-bottom: 13px;
+
+	@media (max-width: $breakpoint-md) {
+		margin-bottom: 20px;
+	}
+}
+
+.title {
+	margin-bottom: 13px;
+}
+
+.text {
+	max-width: 442px;
+
+	@media (max-width: $breakpoint-2lg) {
+		margin-bottom: 20px;
+	}
+}
+
+.box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+	margin-bottom: 24px;
+
+	@media (max-width: $breakpoint-md) {
+		grid-template-columns: 1fr;
+	}
+}

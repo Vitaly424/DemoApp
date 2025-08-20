@@ -1,0 +1,9 @@
+<svg width="0" height="0" class="hidden" aria-hidden="true">
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 60" id="quotation-marks">
+		<path d="M45.3766 0.199996H70.8166V19.88C70.8166 39.88 63.3766 53 48.4966 59.24L43.2166 49.16C52.6566 45.32 57.4566 37.88 57.6166 26.84H45.3766V0.199996ZM3.13656 0.199996H28.8166V19.88C28.8166 40.04 21.3766 53.16 6.49656 59.24L0.976562 49.16C10.2566 45.48 15.1366 38.04 15.6166 26.84H3.13656V0.199996Z" fill="currentColor"></path>
+	</symbol>
+
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" id="arrow">
+		<path d="M2.33105 1.052L13.373 12.094L13.373 5.15552L14.873 5.15552L14.873 14.6555L5.37305 14.6555L5.37305 13.1555L12.3115 13.1555L1.26953 2.11353L2.33105 1.052Z" fill="currentColor" stroke="white" stroke-width="0.5"></path>
+	</symbol>
+</svg>  

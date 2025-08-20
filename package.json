@@ -1,0 +1,41 @@
+{
+	"name": "Demo",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettier": "npx prettier --write **/*.{ts,tsx,json}"
+	},
+	"dependencies": {
+		"@react-three/drei": "^10.0.7",
+		"@react-three/fiber": "^9.1.2",
+		"@szhsin/react-accordion": "^1.4.0",
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"axios": "^1.9.0",
+		"clsx": "^2.1.1",
+		"framer-motion": "^12.9.4",
+		"next": "15.3.1",
+		"nextjs-toploader": "^3.8.16",
+		"prettier": "^3.5.3",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-easy-marquee": "^1.2.4",
+		"react-fast-marquee": "^1.6.5",
+		"sass": "^1.87.0",
+		"swiper": "^11.2.6",
+		"three": "^0.176.0"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^9",
+		"eslint-config-next": "15.3.1",
+		"typescript": "^5"
+	}
+}

@@ -1,0 +1,25 @@
+:root {
+	--color-background: #f4f4f4;
+
+	--color-text-primary: #7c7c7c;
+	--color-text-secondary: #1b1b1b;
+	--color-text-accent: #fbfbfb;
+	--color-text-footer: #555;
+
+	--color-bg-badge: #d4e5ff;
+	--color-accent: #155dff;
+}
+
+body,
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-weight: 600;
+	background-color: var(--color-background);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.36;
+	color: var(--color-text-primary);
+}

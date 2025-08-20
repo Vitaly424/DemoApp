@@ -1,0 +1,15 @@
+.currency_wrapper {
+	max-width: 1028px;
+	margin: 0 auto;
+
+	.exchange_card {
+		overflow: hidden;
+		min-height: 670px;
+		padding: 60px 60px 44px;
+
+		@media (max-width: $breakpoint-md) {
+			padding: 30px 30px 20px;
+			min-height: auto;
+		}
+	}
+}

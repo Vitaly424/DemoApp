@@ -1,0 +1,75 @@
+.card {
+	position: relative;
+	border-radius: 40px;
+	padding: 60px 36px 46px 36px;
+
+	@media (max-width: $breakpoint-lg) {
+		padding-right: 30px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		padding: 40px 24px 40px 24px;
+	}
+}
+
+.wrapper {
+	.card_last {
+		padding-bottom: 64px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: $breakpoint-lg) {
+			padding-bottom: 40px;
+		}
+	}
+}
+
+.badge {
+	margin-bottom: 13px;
+
+	@media (max-width: $breakpoint-md) {
+		margin-bottom: 20px;
+	}
+}
+
+.title {
+	margin-bottom: 13px;
+}
+
+.text {
+	max-width: 442px;
+
+	@media (max-width: $breakpoint-2lg) {
+		margin-bottom: 20px;
+	}
+}
+
+.box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+	margin-bottom: 24px;
+
+	@media (max-width: $breakpoint-md) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.card_last_content {
+	width: 100%;
+}
+
+.card_last_img {
+	position: absolute;
+	right: 100px;
+
+	@media (max-width: $breakpoint-2lg) {
+		max-width: 250px;
+		right: 0;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		display: none;
+	}
+}

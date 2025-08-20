@@ -1,0 +1,48 @@
+.section {
+	margin-bottom: 150px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 66px;
+	}
+
+	.exchange_card {
+		padding: 60px 60px 44px;
+
+		@media (max-width: $breakpoint-md) {
+			padding: 30px 30px 20px;
+		}
+	}
+}
+
+.title {
+	max-width: 750px;
+	margin: 0 auto 46px;
+}
+
+.image_decor_rate {
+	position: absolute;
+	top: -400px;
+	left: -200px;
+
+	img {
+		width: 500px;
+	}
+
+	@media (max-width: $breakpoint-xl) {
+		left: 20px;
+		top: -340px;
+
+		img {
+			width: 400px;
+		}
+	}
+
+	@media (max-width: $breakpoint-lg) {
+		left: -40px;
+		top: -230px;
+
+		img {
+			width: 280px;
+		}
+	}
+}

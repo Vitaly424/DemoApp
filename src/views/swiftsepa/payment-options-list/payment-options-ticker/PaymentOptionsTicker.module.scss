@@ -1,0 +1,109 @@
+@keyframes scrollLoop {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.ticker_wrapper {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.ticker_track {
+	display: flex;
+	width: max-content;
+	animation: scrollLoop 17s linear infinite;
+	will-change: transform;
+}
+
+.ticker_card {
+	flex-shrink: 0;
+	margin-right: 24px;
+
+	img {
+		position: absolute;
+	}
+}
+
+.ticker_card {
+	margin-right: 20px;
+	width: 280px;
+
+	img {
+		position: absolute;
+	}
+}
+
+.products {
+	img {
+		right: 10px;
+	}
+}
+
+.services {
+	img {
+		right: 10px;
+	}
+}
+
+.marketing {
+	img {
+		bottom: 10px;
+		right: 10px;
+	}
+}
+
+.decorating {
+	img {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+.it {
+	img {
+		bottom: 10px;
+		right: 14px;
+	}
+}
+
+.cosmetic {
+	img {
+		right: 10px;
+	}
+}
+
+.study {
+	img {
+		top: 15px;
+		right: 0;
+	}
+}
+
+.realty {
+	width: 461px;
+
+	img {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+.agricultural_products {
+	width: 640px;
+
+	@media (max-width: $breakpoint-md) {
+		width: 570px;
+	}
+
+	img {
+		right: 10px;
+		top: 10px;
+	}
+}

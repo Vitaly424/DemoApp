@@ -1,0 +1,38 @@
+.heading {
+	margin-bottom: 60px;
+}
+
+.badge {
+	margin-bottom: 13px;
+	width: 59px;
+	height: 59px;
+	padding: 0;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+
+	@media (max-width: $breakpoint-lg) {
+		grid-template-columns: repeat(2, 1fr);
+
+		& > .bg_card:nth-child(3) {
+			grid-column: 1/-1;
+		}
+	}
+
+	@media (max-width: $breakpoint-md) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.title {
+	margin-bottom: 13px;
+}
+
+.link {
+	right: 30px;
+	top: 30px;
+	position: absolute;
+}

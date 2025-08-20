@@ -1,0 +1,75 @@
+.title {
+	color: var(--color-text-secondary);
+	font-weight: 600;
+}
+
+.lg {
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 1;
+
+	@media (max-width: $breakpoint-xl) {
+		font-size: 50px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 36px;
+	}
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 32px;
+	}
+}
+
+.md_2 {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1;
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 32px;
+	}
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+}
+
+.md {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1;
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 32px;
+	}
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+}
+
+.sm {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1;
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 20px;
+	}
+}
+
+// position
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}

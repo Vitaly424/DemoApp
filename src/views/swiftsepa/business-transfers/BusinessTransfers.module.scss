@@ -1,0 +1,47 @@
+.section {
+	position: relative;
+	padding-top: 300px;
+	margin-bottom: 224px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 66px;
+		padding-top: 250px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		padding-top: 250px;
+	}
+}
+
+.image_decor_1 {
+	position: absolute;
+	top: -170px;
+	right: 40px;
+	z-index: -1;
+
+	@media (max-width: $breakpoint-md) {
+		width: 160px;
+		height: 112px;
+		top: -140px;
+	}
+}
+
+.heading {
+	margin-bottom: 160px;
+}
+
+.title {
+	margin-bottom: 32px;
+}
+
+.text {
+	margin-bottom: 44px;
+	max-width: 662px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.link_button {
+	margin-left: auto;
+	margin-right: auto;
+}

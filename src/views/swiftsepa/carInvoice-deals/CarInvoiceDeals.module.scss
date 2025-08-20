@@ -1,0 +1,54 @@
+.section {
+	position: relative;
+	padding-top: 300px;
+	margin-bottom: 224px;
+
+	@media (max-width: $breakpoint-lg) {
+		margin-bottom: 66px;
+		padding-top: 250px;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		padding-top: 250px;
+	}
+}
+
+.heading {
+	margin-bottom: 37px;
+}
+
+.title {
+	max-width: 1090px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 32px;
+}
+
+.text {
+	max-width: 813px;
+	margin-bottom: 44px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.link_button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.accordion {
+	position: relative;
+}
+
+.image_decor_car {
+	position: absolute;
+	left: -100px;
+	top: -400px;
+	z-index: -1;
+
+	@media (max-width: $breakpoint-lg) {
+		left: 0px;
+		top: -250px;
+		max-width: 300px;
+	}
+}

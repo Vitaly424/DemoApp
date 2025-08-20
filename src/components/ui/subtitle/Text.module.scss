@@ -1,0 +1,39 @@
+.text {
+	line-height: 1.36;
+	font-weight: 500;
+}
+
+// position
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+// variant
+.gray {
+	color: var(--color-text-primary);
+}
+
+.dark {
+	color: var(--color-text-secondary);
+}
+
+// size
+.sm {
+	font-size: 18px;
+}
+
+.md {
+	font-size: 24px;
+
+	@media (max-width: $breakpoint-md) {
+		font-size: 15px;
+	}
+}
